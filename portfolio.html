@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="body">
+    <!--Header-->
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./">Web<span class="logo-black">Studio</span></a>
+        <nav class="navigation">
+          <ul class="navigation-list list">
+            <li class="navigation-item">
+              <a class="navigation-link link hover" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a
+                class="navigation-link link current hover"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link hover" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a
+              class="header-link envelope link hover"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icon.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link hover" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icon.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Main-->
+    <main>
+      <section class="service section">
+        <div class="container">
+          <h1 class="visually-hidden">Услуги</h1>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button class="filter-btn btn" type="button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn btn" type="button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="service-list card-set list">
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img1.jpg"
+                    alt=" Главная страница вебсайта"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Технокряк</h2>
+                  <p class="sevice-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img2.jpg"
+                    alt="Яркий постер"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="sevice-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img3.jpg"
+                    alt="Пример приложения"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Ресторан Seafood</h2>
+                  <p class="sevice-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img4.jpg"
+                    alt="Наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Проект Prime</h2>
+                  <p class="sevice-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img5.jpg"
+                    alt=" Две коробники на белом фоне"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Проект Boxes</h2>
+                  <p class="sevice-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img6.jpg"
+                    alt="Монитор компьютерный"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Inspiration has no Borders</h2>
+                  <p class="sevice-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img7.jpg"
+                    alt="Открытый глянцевый журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Издание Limited Edition</h2>
+                  <p class="sevice-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img8.jpg"
+                    alt="Бирка на веревке"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Проект LAB</h2>
+                  <p class="sevice-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item card-item">
+              <a
+                class="service-link link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="service-overlay-block">
+                  <img
+                    class="service-img"
+                    src="./images/img9.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="service-overlay">
+                    <p class="service-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects">
+                  <h2 class="sevice-subtitle">Growing Business</h2>
+                  <p class="sevice-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <a class="logo" href="./"
+            >Web<span class="logo-white">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  class="address-link link hover"
+                  href="https://goo.gl/maps/9ueQtpKUG1VsnXtN6"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="address-item">
+                <a class="mail-link link hover" href="mailto:info@example.com"
+                  >info@example.com
+                </a>
+              </li>
+              <li class="address-item">
+                <a class="tel-link link hover" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="company-socials">
+          <p class="socials-text">присоединяйтесь</p>
+          <ul class="socials list">
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Instagram"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Instagram"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Instagram"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Instagram"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icon.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-field">
+          <p class="socials-text">Подпишитесь на рассылку</p>
+          <form autocomplete="off" class="footer-form">
+            <label>
+              <input
+                name="mailing"
+                type="email"
+                class="footer-form-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-btn btn btn-dezign">
+              Подписаться
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
