@@ -120,8 +120,16 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-clr);
+}
 
-/* Main header */
+/* Main */
 
 /* Logo */
 
@@ -172,6 +180,11 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .navigation__list {
@@ -263,7 +276,8 @@ img {
   text-transform: uppercase;
   color: var(--main-txt-clr);
 }
-.digity__container {
+
+.dignity__container {
   display: flex;
   width: 100%;
   height: 120px;
@@ -279,6 +293,10 @@ img {
 
 .operations {
   padding-top: 0;
+}
+
+.operations__list {
+  --card-item: 3;
 }
 
 .operations__overlay-block {
@@ -303,22 +321,9 @@ img {
   text-transform: uppercase;
 }
 
-.operations__list {
-  --card-item: 3;
-}
-
 .operations__img {
   display: block;
   height: auto;
-}
-
-.operations__title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
-  color: var(--main-txt-clr);
 }
 
 /* Team */
@@ -327,35 +332,34 @@ img {
   background-color: var(--secondary-bgr-clr);
 }
 
-.team-item {
+.team__item {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
 }
 
-.team-card {
+.team__card {
   padding: 30px;
   text-align: center;
   background-color: var(--btn-clr);
 }
 
-.team-text,
-.team-title {
+.team__title {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-}
-
-.team-title {
   color: var(--main-txt-clr);
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: calc(19 / 16);
   margin-bottom: 16px;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
 }
 
 .card-item {
@@ -371,23 +375,20 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-contacts {
-  display: flex;
-  gap: 70px;
-}
+
 .address {
   color: var(--mail-tel-clr);
   font-style: normal;
 }
 
-.address-link {
+.address__link {
   color: var(--btn-clr);
 }
 
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-list {
+.address__list {
   display: block;
 }
 
@@ -396,7 +397,7 @@ img {
   margin-bottom: 20px;
 }
 
-.logo-white {
+.logo--white {
   color: var(--btn-clr);
 }
 
@@ -504,20 +505,15 @@ img {
 
 /* Social icons */
 
-.header__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 /*Company Socials */
 
-.socials {
+.socials__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.socials-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,31 +523,31 @@ img {
   transition: background-color var(--anim-fast);
 }
 
-.footer .socials-link {
+.footer .socials__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .socials-icon {
+.footer.socials__icon {
   --color1: var(--btn-clr);
   transition: color var(--anim-fast);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--logo-clr);
 }
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   --color1: #ffff;
 }
 
 /* Cliens icons */
 
-.clients-list {
+.clients__list {
   --card-item: 6;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,29 +556,21 @@ img {
   border-radius: 4px;
   transition: border-color var(--anim-fast);
 }
-.clients-icon {
+.clients__icon {
   fill: var(--icon-clr);
   transition: fill var(--anim-fast);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--logo-clr);
 }
 
-.clients-link:focus .clients-icon,
-.clients-link:hover .clients-icon {
+.clients__link:focus .clients__icon,
+.clients__link:hover .clients__icon {
   fill: var(--logo-clr);
 }
 
 /* Footer icons */
-
-.socials-text {
-  color: var(--btn-clr);
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
 
 .footer .container {
   display: flex;
@@ -590,18 +578,29 @@ img {
   align-items: baseline;
 }
 
-.company-socials .dignity-title {
+.socials {
   color: var(--btn-clr);
   margin-bottom: 20px;
 }
-.footer-form {
+
+.socials__text {
+  color: var(--btn-clr);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.socials__form {
   display: flex;
   gap: 12px;
 }
-.footer-form-field {
+
+.socials__field {
   margin-left: auto;
 }
-.footer-form-input {
+
+.footer-form__input {
   padding: 15px 16px;
   width: 358px;
   background-color: transparent;
@@ -613,15 +612,15 @@ img {
   outline: none;
   transition: border-color var(--anim-fast);
 }
-.footer-form-input:hover,
-.footer-form-input:focus {
+.footer-form__input:hover,
+.footer-form__input:focus {
   border-color: var(--btn-clr);
 }
 .footer-form::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-btn {
+.footer-form__btn {
   padding: 10px 28px;
   gap: 10px;
   transition: background-color var(--anim-fast);
@@ -638,6 +637,16 @@ img {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
+}
+
+.backdrop__title {
+  display: block;
+  text-align: center;
+  color: var(--main-txt-clr);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(23 / 20);
+  margin-bottom: 20px;
 }
 
 .backdrop.is-hidden {
@@ -679,22 +688,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--anim-fast);
 }
+
 .modal__btn:hover .modal__icon,
 .modal__btn:focus .modal__icon {
   fill: #2196f3;
 }
+
 .register-form__group {
   margin-bottom: 12px;
 }
-.backdrop__title {
-  display: block;
-  text-align: center;
-  color: var(--main-txt-clr);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: calc(23 / 20);
-  margin-bottom: 20px;
-}
+
 .register-form__input,
 .register-form__message {
   width: 100%;
