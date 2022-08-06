@@ -116,6 +116,10 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Main header */
 
@@ -231,7 +235,7 @@ img {
     url("../images/header.jpg");
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -246,11 +250,11 @@ img {
 
 /* Dignity */
 
-.dignity-item {
+.dignity__item {
   width: 270px;
 }
 
-.dignity-title {
+.dignity__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -259,13 +263,29 @@ img {
   text-transform: uppercase;
   color: var(--main-txt-clr);
 }
+.digity__container {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bgr-clr);
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+}
 
 /* Operations */
-.operations-overlay-block {
+
+.operations {
+  padding-top: 0;
+}
+
+.operations__overlay-block {
   position: relative;
 }
 
-.operations-overlay {
+.operations__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -275,7 +295,7 @@ img {
   height: 70px;
 }
 
-.operation-overlay-text {
+.operation__text {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-align: center;
@@ -283,24 +303,16 @@ img {
   text-transform: uppercase;
 }
 
-.operations-list {
+.operations__list {
   --card-item: 3;
 }
 
-.operations-img {
+.operations__img {
   display: block;
   height: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.operations {
-  padding-top: 0;
-}
-
-.section-title {
+.operations__title {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
@@ -491,18 +503,6 @@ img {
 }
 
 /* Social icons */
-
-.digity-container {
-  display: flex;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--secondary-bgr-clr);
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 4px;
-}
 
 .header__icon {
   fill: currentColor;
