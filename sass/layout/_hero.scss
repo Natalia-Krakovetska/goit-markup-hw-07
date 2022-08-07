@@ -1,0 +1,30 @@
+.hero {
+    text-align: center;
+    background-color: var(--bgr-clr);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+            var(--brd-gradient-clr),
+            var(--brd-gradient-clr)),
+        url("../images/header.jpg");
+}
+
+.hero__title {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: var(--btn-clr);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}

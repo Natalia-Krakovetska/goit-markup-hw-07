@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--bgr-clr);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__address {
+    color: var(--mail-tel-clr);
+    font-style: normal;
+}
+
+.footer__link {
+    color: var(--btn-clr);
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__list {
+    display: block;
+}
+.footer__address .hover {
+    transition: color var(--anim-fast);
+}
+.footer .container {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}

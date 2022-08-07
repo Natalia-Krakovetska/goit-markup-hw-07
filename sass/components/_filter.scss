@@ -1,0 +1,35 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.service__filter {
+    margin-bottom: 50px;
+}
+
+.filter__btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    max-width: 100%;
+    border: none;
+    color: var(--main-txt-clr);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-bgr-clr);
+    border-radius: 4px;
+    transition: color var(--anim-fast), background-color var(--anim-fast),
+        box-shadow var(--anim-fast);
+}
+
+.filter__btn:hover,
+.filter__btn:focus {
+    color: var(--btn-clr);
+    background-color: var(--logo-clr);
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
