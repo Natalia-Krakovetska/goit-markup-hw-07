@@ -5,12 +5,12 @@
 .logo {
     display: block;
     text-decoration: none;
-    font-family: var(--secondary-txt-clr);
+    font-family: $secondary-txt-font;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
-    color: var(--logo-clr);
+    color: $logo-clr;
 }
 
 .logo--black {
@@ -22,5 +22,5 @@
 }
 
 .logo--white {
-    color: var(--btn-clr);
+    color: $btn-clr;
 }

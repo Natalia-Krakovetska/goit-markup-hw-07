@@ -1,6 +1,6 @@
 .hero {
     text-align: center;
-    background-color: var(--bgr-clr);
+    background-color: $bgr-clr;
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -11,8 +11,8 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right,
-            var(--brd-gradient-clr),
-            var(--brd-gradient-clr)),
+            $brd-gradient-clr,
+            $brd-gradient-clr),
         url("../images/header.jpg");
 }
 
@@ -21,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    color: var(--btn-clr);
+    color: $btn-clr;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);

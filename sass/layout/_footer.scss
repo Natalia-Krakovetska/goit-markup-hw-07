@@ -1,16 +1,16 @@
 .footer {
-    background-color: var(--bgr-clr);
+    background-color: $bgr-clr;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer__address {
-    color: var(--mail-tel-clr);
+    color: $mail-tel-clr;
     font-style: normal;
 }
 
 .footer__link {
-    color: var(--btn-clr);
+    color: $btn-clr;
 }
 
 .footer__item:not(:last-child) {
@@ -21,7 +21,7 @@
     display: block;
 }
 .footer__address .hover {
-    transition: color var(--anim-fast);
+    transition: color $anim-fast;
 }
 .footer .container {
     display: flex;

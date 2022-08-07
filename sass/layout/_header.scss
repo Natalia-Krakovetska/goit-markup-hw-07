@@ -2,11 +2,11 @@
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    border-bottom: 1px solid var(--brd-hero-clr);
+    border-bottom: 1px solid $brd-hero-clr;
 }
 
 .header .hover {
-    transition: color var(--anim-fast);
+    transition: color $anim-fast;
 }
 
 .header__container {

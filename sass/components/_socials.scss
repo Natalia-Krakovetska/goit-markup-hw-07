@@ -12,7 +12,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: background-color var(--anim-fast);
+    transition: background-color $anim-fast;
 }
 
 .footer .socials__link {
@@ -21,25 +21,25 @@
 
 .footer.socials__icon {
     --color1: $btn-clr;
-    transition: color var(--anim-fast);
+    transition: color $anim-fast;
 }
 
 .socials__link:hover,
 .socials__link:focus {
-    background-color: var(--logo-clr);
+    background-color: $logo-clr;
 }
 
 .socials__link:hover .socials__icon,
 .socials__link:focus .socials__icon {
-    --color1: var(--logo-clr);
+    --color1: $logo-clr;
 }
 .socials {
-    color: var(--btn-clr);
+    color: $btn-clr;
     margin-bottom: 20px;
 }
 
 .socials__text {
-    color: var(--btn-clr);
+    color: $btn-clr;
     font-weight: 700;
     line-height: calc(16 / 14);
     margin-bottom: 20px;

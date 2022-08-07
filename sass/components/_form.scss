@@ -10,7 +10,7 @@
     border-radius: 4px;
     outline: transparent;
     cursor: pointer;
-    transition: border-color var(--anim-fast);
+    transition: border-color $anim-fast;
 }
 
 .register-form__message {
@@ -21,12 +21,12 @@
 
 .register-form__input:focus,
 .register-form__input:hover {
-    border-color: var(--logo-clr);
+    border-color: $logo-clr;
 }
 
 .register-form__message:focus,
 .register-form__message:hover {
-    border-color: var(--logo-clr);
+    border-color: $logo-clr;
 }
 
 .register-form__message::placeholder {
@@ -47,7 +47,7 @@
 }
 
 .register-form__icon {
-    transition: fill var(--anim-fast);
+    transition: fill $anim-fast;
 }
 
 .register-form__input:focus+.register-form__icon,
@@ -90,7 +90,7 @@
 
 .agreement__icon--check {
     opacity: 0;
-    transition: opacity var(--anim-fast);
+    transition: opacity $anim-fast;
 }
 
 .agreement__checkbox:checked+.agreement__icon .agreement__icon--check {
@@ -98,7 +98,7 @@
 }
 
 .agreement__icon--uncheck {
-    transition: fill var(--anim-fast);
+    transition: fill $anim-fast;
 }
 
 .agreement__checkbox:hover+.agreement__icon .agreement__icon--uncheck,

@@ -1,19 +1,19 @@
 body {
-    font-family: var(--main-txt-font);
+    font-family:$main_txt_font;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-txt-clr);
+    color: $secondary-txt-clr;
 }
 
 .hover:hover,
 .hover:focus {
-    color: var(--logo-clr);
+    color: $logo-clr;
 }
 
-.link:active {
-    color: var(--logo-clr);
-}
+// .link:active {
+//     color: $logo-clr;
+// }
 
 
 

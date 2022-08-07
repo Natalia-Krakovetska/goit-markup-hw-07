@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--brd-card-clr);
+    border: 1px solid $brd-card-clr;
     border-top: none;
 }
 
@@ -17,11 +17,11 @@
     top: 0;
     left: 0;
     transform: translateY(100%);
-    transition: transform var(--anim-fast);
+    transition: transform $anim-fast;
     height: 100%;
     width: 100%;
     padding: 63px 24px;
-    background-color: var(--logo-clr);
+    background-color: $logo-clr;
     opacity: 90%;
 }
 
@@ -32,7 +32,7 @@
 
 .service__text {
     text-align: left;
-    color: var(--btn-clr);
+    color: $btn-clr;
     font-size: 18px;
     line-height: calc(28 / 18);
     user-select: none;
@@ -40,7 +40,7 @@
 
 .service__link {
     display: block;
-    transition: box-shadow var(--anim-fast);
+    transition: box-shadow $anim-fast;
 }
 
 .service__link:hover,
@@ -53,7 +53,7 @@
 }
 
 .sevice__subtitle {
-    color: var(--main-txt-clr);
+    color: $main-txt-clr;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
