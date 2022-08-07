@@ -228,9 +228,8 @@ ol {
   transition: color var(--anim-fast);
 } */
 
-/*Hero*/
-/* 
-.hero {
+/*Hero*/ 
+/* .hero {
   text-align: center;
   background-color: var(--bgr-clr);
   padding-top: 200px;
@@ -248,8 +247,8 @@ ol {
       var(--brd-gradient-clr)
     ),
     url("../images/header.jpg");
-}
-
+} */
+/* 
 .hero__title {
   max-width: 696px;
   margin-left: auto;
@@ -261,7 +260,7 @@ ol {
   line-height: calc(60 / 44);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-} */
+} */ */
 
 /* Dignity */
 
