@@ -1,71 +1,55 @@
 .socials {
-    color: $btn-clr;
-    margin-bottom: 20px;
-
-    &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        transition: background-color $anim-fast;
-
-        &:hover {
-            background-color: $logo-clr;
-        }
-
-        &:focus {
-            background-color: $logo-clr;
-        }
-
-        &:hover .socials__icon {
-        --color1: $logo-clr;
-        }
-        
-        &:focus .socials__icon {
-            --color1: $logo-clr;
-        }
-
-        .footer & {
-            background-color: $secondary-bgr-icon;
-        }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     &__form {
         display: flex;
         gap: 12px;
     }
+}
 
-    &__field {
-        margin-left: auto;
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $anim-fast;
+
+    &:hover {
+        background-color: $logo-clr;
     }
 
-    &__text {
-        color: $btn-clr;
-        font-weight: 700;
-        line-height: calc(16 / 14);
-        margin-bottom: 20px;
-        text-transform: uppercase;
+    &:focus {
+        background-color: $logo-clr;
     }
-    &__icon {
-        // --color1: $icon-clr;
-        .footer & {
-            --color1: $btn-clr;
-        transition: color $anim-fast;
+
+    // &:hover .socials__icon {
+    //     --color1: $btn-clr;
+    // }
+
+    // &:focus .socials__icon {
+    //     --color1: $btn-clr;
+    // }
+
+    .footer & {
+        background-color: $secondary-bgr-icon;
     }
-        // .socials__link:hover & {
-        //     --color1: $logo-clr;
-        // }
-        // .socials__link:focus & {
-        //     --color1: $logo-clr;
-        // }
-    }    
+}
+.socials__icon {
+    &--white {
+        fill: $btn-clr;
+        transition: --color1 $anim-fast;
+    }
+
+    .socials__link:hover & {
+        fill: $logo-clr;
+    }
+
+    .socials__link:focus & {
+        fill: $logo-clr;
+    }
 }

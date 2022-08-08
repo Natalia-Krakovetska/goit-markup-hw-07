@@ -228,7 +228,7 @@ ol {
   transition: color $anim-fast;
 } */
 
-/*Hero*/ 
+/*Hero*/
 /* .hero {
   text-align: center;
   background-color: $bgr-clr;
@@ -260,7 +260,7 @@ ol {
   line-height: calc(60 / 44);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-} */ */
+} */
 
 /* Dignity */
 
@@ -767,7 +767,7 @@ ol {
   margin-bottom: 0;
 } */
 
-/* .register-form__agreement {
+/* /* .register-form__agreement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -793,7 +793,7 @@ ol {
   fill: $logo-clr;
 }
 
-.agreement__text {
+/* .agreement__text {
   user-select: none;
   text-underline-position: under;
 }

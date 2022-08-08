@@ -1,8 +1,35 @@
-.register-form__group {
-    margin-bottom: 12px;
+.register-form {
+    &__group {
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+    }
+
+    &__agreement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    &__icon {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+    }
 }
 
-.register-form__input,
 .register-form__message {
     width: 100%;
     padding: 11px 42px;
@@ -11,57 +38,52 @@
     outline: transparent;
     cursor: pointer;
     transition: border-color $anim-fast;
-}
-
-.register-form__message {
     height: 120px;
     resize: none;
     padding: 12px 16px;
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        letter-spacing: 0.01em;
+    }
+
+    &:hover {
+        border-color: $logo-clr;
+    }
+
+    &:focus {
+        border-color: $logo-clr;
+    }
 }
 
-.register-form__input:focus,
-.register-form__input:hover {
-    border-color: $logo-clr;
-}
+.register-form__input {
+    width: 100%;
+    padding: 11px 42px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border-color $anim-fast;
 
-.register-form__message:focus,
-.register-form__message:hover {
-    border-color: $logo-clr;
-}
+    &:hover {
+        border-color: $logo-clr;
+    }
 
-.register-form__message::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    letter-spacing: 0.01em;
+    &:focus {
+        border-color: $logo-clr;
+    }
+
+    &:focus+.register-form__icon {
+        fill: $logo-clr;
+    }
+
+    &:hover+.register-form__icon {
+        fill: $logo-clr;
+    }
 }
 
 .register-form__form-wrap {
     position: relative;
-}
-
-.register-form__icon {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-}
-
-.register-form__icon {
-    transition: fill $anim-fast;
-}
-
-.register-form__input:focus+.register-form__icon,
-.register-form__input:hover+.register-form__icon {
-    fill: var(--logo-cl);
-}
-
-.register-form__label {
-    display: block;
-    text-align: left;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
 }
 
 .register-form__wrap {
@@ -69,48 +91,50 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.register-form__wrap:last-child {
-    margin-bottom: 0;
+.agreement {
+    &__link {
+        color: $logo-clr;
+    }
+
+    &__text {
+        user-select: none;
+        text-underline-position: under;
+    }
 }
 
-.register-form__agreement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    margin-bottom: 30px;
-    cursor: pointer;
+.agreement__icon {
+
+    &--check {
+        opacity: 0;
+        transition: opacity $anim-fast;
+    }
+
+    &--uncheck {
+        transition: fill $anim-fast;
+    }
 }
 
-.agreement__checkbox:checked+.agreement__icon.agreement__icon--uncheck {
-    opacity: 0;
-}
 
-.agreement__icon--check {
-    opacity: 0;
-    transition: opacity $anim-fast;
-}
+.agreement__checkbox {
+    &:checked+.agreement__icon .agreement__icon--uncheck {
+        opacity: 0;
+    }
 
-.agreement__checkbox:checked+.agreement__icon .agreement__icon--check {
-    opacity: 1;
-}
+    &:checked+.agreement__icon .agreement__icon--check {
+        opacity: 1;
+    }
 
-.agreement__icon--uncheck {
-    transition: fill $anim-fast;
-}
+    &:focus+.agreement__icon .agreement__icon--uncheck {
+        fill: $logo-clr;
+    }
 
-.agreement__checkbox:hover+.agreement__icon .agreement__icon--uncheck,
-.agreement__checkbox:focus+.agreement__icon .agreement__icon--uncheck {
-    fill: var(--logo-cl);
-}
-
-.agreement__text {
-    user-select: none;
-    text-underline-position: under;
-}
-
-.agreement__link {
-    color: var(--logo-cl);
+    &:hover+.agreement__icon .agreement__icon--uncheck {
+        fill: $logo-clr;
+    }
 }

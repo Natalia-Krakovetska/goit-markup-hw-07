@@ -3,19 +3,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__link {
-        color: $mail-tel-clr;
-
-        &--address {
-            color: $btn-clr;
-            font-style: normal;
-        }
-
-        &:hover {
-            color: $btn-clr
-        }
-    }
-
     &__address {
         color: $mail-tel-clr;
         font-style: normal;
@@ -34,5 +21,35 @@
         display: flex;
         gap: 70px;
         align-items: baseline;
+    }
+
+    &__text {
+        color: $btn-clr;
+        font-weight: 700;
+        line-height: calc(16 / 14);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__field {
+        margin-left: auto;
+    }
+}
+
+.footer__socials {
+    color: $btn-clr;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    color: $btn-clr;
+
+    &--contacts {
+        color: $mail-tel-clr;
+        font-style: normal;
+    }
+
+    &:hover {
+        color: $btn-clr
     }
 }
