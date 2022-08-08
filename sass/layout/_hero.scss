@@ -14,17 +14,18 @@
             $brd-gradient-clr,
             $brd-gradient-clr),
         url("../images/header.jpg");
+        
+    &__title {
+        max-width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        color: $btn-clr;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
 }
 
-.hero__title {
-    max-width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    color: $btn-clr;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}

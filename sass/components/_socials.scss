@@ -1,56 +1,71 @@
-.socials__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.socials__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color $anim-fast;
-}
-
-.footer .socials__link {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer.socials__icon {
-    --color1: $btn-clr;
-    transition: color $anim-fast;
-}
-
-.socials__link:hover,
-.socials__link:focus {
-    background-color: $logo-clr;
-}
-
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-    --color1: $logo-clr;
-}
 .socials {
     color: $btn-clr;
     margin-bottom: 20px;
-}
 
-.socials__text {
-    color: $btn-clr;
-    font-weight: 700;
-    line-height: calc(16 / 14);
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 
-.socials__form {
-    display: flex;
-    gap: 12px;
-}
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color $anim-fast;
 
-.socials__field {
-    margin-left: auto;
+        &:hover {
+            background-color: $logo-clr;
+        }
+
+        &:focus {
+            background-color: $logo-clr;
+        }
+
+        &:hover .socials__icon {
+        --color1: $logo-clr;
+        }
+        
+        &:focus .socials__icon {
+            --color1: $logo-clr;
+        }
+
+        .footer & {
+            background-color: $secondary-bgr-icon;
+        }
+    }
+
+    &__form {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__field {
+        margin-left: auto;
+    }
+
+    &__text {
+        color: $btn-clr;
+        font-weight: 700;
+        line-height: calc(16 / 14);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__icon {
+        // --color1: $icon-clr;
+        .footer & {
+            --color1: $btn-clr;
+        transition: color $anim-fast;
+    }
+        // .socials__link:hover & {
+        //     --color1: $logo-clr;
+        // }
+        // .socials__link:focus & {
+        //     --color1: $logo-clr;
+        // }
+    }    
 }

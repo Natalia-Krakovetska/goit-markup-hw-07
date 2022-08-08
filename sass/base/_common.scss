@@ -6,17 +6,6 @@ body {
     color: $secondary-txt-clr;
 }
 
-.hover:hover,
-.hover:focus {
-    color: $logo-clr;
-}
-
-// .link:active {
-//     color: $logo-clr;
-// }
-
-
-
 .visually-hidden {
     position: absolute;
     width: 1px;

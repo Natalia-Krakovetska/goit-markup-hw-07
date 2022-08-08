@@ -2,29 +2,37 @@
     background-color: $bgr-clr;
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.footer__address {
-    color: $mail-tel-clr;
-    font-style: normal;
-}
+    &__link {
+        color: $mail-tel-clr;
 
-.footer__link {
-    color: $btn-clr;
-}
+        &--address {
+            color: $btn-clr;
+            font-style: normal;
+        }
 
-.footer__item:not(:last-child) {
-    margin-bottom: 9px;
-}
+        &:hover {
+            color: $btn-clr
+        }
+    }
 
-.footer__list {
-    display: block;
-}
-.footer__address .hover {
-    transition: color $anim-fast;
-}
-.footer .container {
-    display: flex;
-    gap: 70px;
-    align-items: baseline;
+    &__address {
+        color: $mail-tel-clr;
+        font-style: normal;
+    }
+
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__list {
+        display: block;
+    }
+
+    & .container {
+        display: flex;
+        gap: 70px;
+        align-items: baseline;
+    }
 }

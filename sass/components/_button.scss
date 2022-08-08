@@ -21,9 +21,34 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
     transition: background-color $anim-fast;
+    &:hover {
+        background-color: $btn-focus-clr;
+    }
+    &:focus {
+        background-color: $btn-focus-clr;
+    }
 }
 
-.btn-dezign:hover,
-.btn-dezign:focus {
-    background-color: $btn-focus-clr;
+
+.close__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-clr;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill $anim-fast;
+    &:hover .close__icon {
+        fill: #2196f3;
+    }
+
+    &:focus .close__icon {
+        fill: #2196f3;
+    }
 }
