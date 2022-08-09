@@ -45,10 +45,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill $anim-fast;
     &:hover .close__icon {
-        fill: #2196f3;
+        fill: $logo-clr;
     }
 
     &:focus .close__icon {
-        fill: #2196f3;
+        fill: $logo-clr;
     }
 }

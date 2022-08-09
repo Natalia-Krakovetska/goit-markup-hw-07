@@ -3,13 +3,26 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     &__form {
         display: flex;
         gap: 12px;
     }
 }
+.socials__icon {
+    transition: fill $anim-fast;
 
+    &--white {
+        fill: $btn-clr;
+    }
+
+    .socials__link:hover & {
+        fill: $btn-clr;
+    }
+
+    .socials__link:focus & {
+        fill: $btn-clr;
+    }
+}
 .socials__link {
     display: flex;
     align-items: center;
@@ -27,29 +40,11 @@
         background-color: $logo-clr;
     }
 
-    // &:hover .socials__icon {
-    //     --color1: $btn-clr;
-    // }
-
-    // &:focus .socials__icon {
-    //     --color1: $btn-clr;
-    // }
-
-    .footer & {
+    &--dark {
         background-color: $secondary-bgr-icon;
     }
 }
-.socials__icon {
-    &--white {
-        fill: $btn-clr;
-        transition: --color1 $anim-fast;
-    }
-
-    .socials__link:hover & {
-        fill: $logo-clr;
-    }
-
-    .socials__link:focus & {
-        fill: $logo-clr;
-    }
-}
+// .footer.socials__icon {
+//     --color1: $btn-clr;
+//     transition: color $anim-fast;
+// }
