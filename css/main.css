@@ -89,30 +89,6 @@ body {
   color: #212121;
 }
 
-.logo {
-  display: block;
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-.logo--black {
-  color: #212121;
-}
-.logo--white {
-  color: #ffffff;
-}
-.logo--right {
-  margin-right: 93px;
-}
-.logo--bottom {
-  display: block;
-  margin-bottom: 20px;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -399,6 +375,30 @@ body {
 }
 .agreement__checkbox:hover + .agreement__icon .agreement__icon--uncheck {
   fill: #2196f3;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo--black {
+  color: #212121;
+}
+.logo--white {
+  color: #ffffff;
+}
+.logo--right {
+  margin-right: 93px;
+}
+.logo--bottom {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-form::-webkit-input-placeholder {
