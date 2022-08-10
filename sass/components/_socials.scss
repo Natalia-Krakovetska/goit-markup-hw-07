@@ -9,6 +9,7 @@
     }
 }
 .socials__icon {
+    fill: $icon-clr;
     transition: fill $anim-fast;
 
     &--white {
@@ -39,12 +40,7 @@
     &:focus {
         background-color: $logo-clr;
     }
-
     &--dark {
         background-color: $secondary-bgr-icon;
     }
 }
-// .footer.socials__icon {
-//     --color1: $btn-clr;
-//     transition: color $anim-fast;
-// }
